@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Test</title>
+    <script type="text/javascript" src="angular.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="SomeController">
+
+    <!--<button type="button" ng-click="pOneAdd()">P1 Add One</button>-->
+    <!--<button type="button" ng-click="pTwoAdd()">P2 Add One</button>-->
+
+    <button type="button" ng-click="add()">Add One to Player</button>
+    <button type="button" ng-click="switchPlayer()">Switch Player</button>
+
+    <div class="playerOneScore">{{currentPlayer.name}}</div>
+    <div class="playerOneScore">{{currentPlayer.score}}</div>
+    <div class="playerTwoScore">{{currentPlayer.clicks}}</div>
+</body>
+</html>
